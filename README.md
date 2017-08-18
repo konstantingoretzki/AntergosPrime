@@ -1,5 +1,6 @@
-# archLinuxPrime
+# AntergosPrime
 
+### This collection of scripts wants to provide GPU-switching from Intel to Nvidia like in \*buntu-Distros.
 
 This application is just a fork of prime application that comes on Linux mint.
 
