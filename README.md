@@ -55,3 +55,16 @@ chmod +x install.sh
 
 **Note:**
 The process is the same if you want to remove AntergosPrime. This time just run **remove.sh**.
+
+
+If everything worked we have now to disable or delete the old display manager (LightDM) and activate our new installed display manager SDDM. Be careful while doing, if your forget to enable SDDM you won't be able to use your desktop environment.
+
+**Disable LightDM**
+sudo systemctl disable lightdm
+
+**Enable SDDM**
+sudo systemctl enable sddm
+
+
+
+
