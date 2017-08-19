@@ -6,8 +6,7 @@ This branch is a fork of emanuellopes's [archLinuxPrime](https://github.com/eman
 
 Even if this branch is made for Antergos, the installation-instructions are mostly system-independent and should therefore work with any Arch-distribution.
 
-#### Status
+### Status
 Currently this script only works with the display manager SDDM and NOT with LightDM.
-
 The prime-indicator does also not work.
 
