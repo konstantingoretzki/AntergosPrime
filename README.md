@@ -117,7 +117,7 @@ You can do this with ```xrandr --output [your-screen-name] --set "PRIME Synchron
 Disabeling is the same, just use "0" instead of "1".
 If you're using KDE, you can easily get your screen-name by KDE's display setup menu.
 
-Inside folder "tearing" of this repo are the two files **kill_vsync.sh** and **start_vsync.sh**, with these files you can easily turn PRIME Synchronization on and off - just execute them.
+Inside the folder "tearing" of this repo are the two files **kill_vsync.sh** and **start_vsync.sh**, with these files you can easily turn PRIME Synchronization on and off - just execute them.
 
 
 ## Troubleshooting
@@ -130,3 +130,7 @@ Try to switch to both GPUs with **prime-select** once, so that all the Xorg-file
 **Solution:**
 Add ```xrandr --dpi [wished DPI]``` to your files **nvidia-optimus.sh** and **Xsetup**.
 If you want to use my dpi-settings, then just uncomment the line ```xrandr --dpi 96``` in both files.
+
+## I get the error ```bash: ./install.sh: no permission```!
+**Solution:**
+Just make the file executable with ```chmod +x install.sh```.
