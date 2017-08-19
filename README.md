@@ -19,9 +19,6 @@ If you can not switch GPUs you have to let your Nvidia-GPU activated the whole t
 
 With AntergosPrime you can switch GPUs easily, similar to \*buntu-distributions. It's of course not perfect, e.g. you have to logout for GPU switching, but at least you can use both GPUs. Other solutions for this type of setup have serveral drawbacks, as mentioned below.
 
-
-
-
 **Bumblebee**
 
 With Bumblebee you can only use the tool "intel-virtual-output", if your HDMI-output is hardwired to the Nvidia-GPU, however it works rather bad and has bad performance (especially if you want to game on a second screen). More Information to intel-virtual-output and Bumblebee can be found [here](https://github.com/Bumblebee-Project/Bumblebee/wiki/Multi-monitor-setup).  
@@ -29,8 +26,6 @@ With Bumblebee you can only use the tool "intel-virtual-output", if your HDMI-ou
 **nvidia-xrun**
 
 There are solutions like nvidia-xrun, the problem with nvidia-xrun is that you have to switch to an unused TTY and also Steam does not work. You can found more information about nvidia-xrun [here](https://github.com/Witko/nvidia-xrun).
-
-
 
 ## DO NOT INSTALL - The AntergosPrime repo is not ready for usage 
 
