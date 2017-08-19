@@ -1,6 +1,6 @@
 # AntergosPrime
 
-### This collection of scripts wants to provide GPU-switching for Hybrid-GPUs like in \*buntu-distributions.
+### This collection of scripts wants to provide GPU-switching for Hybrid-GPUs like in \*buntu-distributions for Antergos.
 
 This branch is a fork of emanuellopes's [archLinuxPrime](https://github.com/emanuellopes/archLinuxPrime) which got optimized for the Antergos distribution. Emanuellopes forked for his repo the prime application that comes on Linux Mint.
 
