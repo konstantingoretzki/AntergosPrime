@@ -87,5 +87,6 @@ sudo prime-select nvidia
 
 ### After an update it does not work anymore
 **Solution**
+
 Try to switch to both GPUs with **prime-select** once, so that all the Xorg-files are in place and do not get overwritten.
 
