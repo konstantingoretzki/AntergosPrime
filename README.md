@@ -13,14 +13,12 @@ The prime-indicator does also not work - currently function goes before accessib
 
 ### Why not solution XYZ?
 
-You might ask why to use this config and not something like Bumblebee. It's simple: if your laptop has the HDMI-output hardwired to your Nvidia GPU and you can not disable any GPU inside your BIOS/UEFI, then you won't be able to switch GPUs.
+You might ask why to use this config and not something like Bumblebee. It's simple: if your laptop has the HDMI-output hardwired to your Nvidia GPU and you can not disable any GPU inside your BIOS/UEFI, then you won't be able to switch GPUs. 
 
 If you can not switch GPUs you have to let your Nvidia-GPU activated the whole time, so that you can use the HDMI-output and do graphical stuff like Gaming. In terms of battery run-time you will see that you can not really use your laptop to go this way since the battery will drain very fast.
 
-With AntergosPrime you can switch GPUs easily, similar to \*buntu-distributions. It's of course not perfect, e.g. you have to logout for GPU switching, but at least you can use both GPUs.
+With AntergosPrime you can switch GPUs easily, similar to \*buntu-distributions. It's of course not perfect, e.g. you have to logout for GPU switching, but at least you can use both GPUs. Other solutions for this type of setup have serveral drawbacks, as mentioned below.
 
-**Note:**
-If you want to use the HDMI-output you have your HDMI-output hardwired to the Nvidia-GPU you have to of course switch to the Nvidia-GPU.
 
 
 
