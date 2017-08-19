@@ -32,7 +32,7 @@ There are solutions like nvidia-xrun, the problem with nvidia-xrun is that you h
 
 
 
-## Installation
+## DO NOT INSTALL - The AntergosPrime repo is not ready for usage - Installation 
 
 **Install bbswitch and SDDM (if not installed)**
 ```
