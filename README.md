@@ -1,9 +1,7 @@
 # AntergosPrime
 
-### This collection of scripts wants to provide GPU-switching from Intel to Nvidia like in \*buntu-Distros.
+### This collection of scripts wants to provide GPU-switching for Hybrid-GPUs like in \*buntu-distributions.
 
-This application is just a fork of prime application that comes on Linux mint.
+This branch is a fork of emanuellopes's archLinuxPrime which got optimized for the Antergos distribution. Emanuellopes forked for his repo the prime application that comes on Linux Mint.
 
-This is only for Arch Linux
-
-In addition to doing this and bring an applet to change the graphic also solves the problems tearing the Intel Graphics
+Even if this branch is made for Antergos, the installation-instructions are mostly system-independent and should therefore work with any Arch-distribution.
