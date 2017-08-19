@@ -2,7 +2,7 @@
 
 ### This collection of scripts wants to provide GPU-switching for Hybrid-GPUs like in \*buntu-distributions for Antergos.
 
-This branch is a fork of emanuellopes's [archLinuxPrime](https://github.com/emanuellopes/archLinuxPrime) which got optimized for the Antergos distribution. Emanuellopes forked for his repo the prime application that comes on Linux Mint.
+This branch is a fork of emanuellopes's [archLinuxPrime](https://github.com/emanuellopes/archLinuxPrime) which got optimized for the Antergos distribution. Emanuellopes forked for his repo the prime application that comes on Linux Mint. The main work of this script goes to Emanuellopes and the Linux-Mint-team, I just optimized on some paths, updated package names, added how to fix the tearing and put everything well described together, so that even people with less bash skills can (hopefully) easily follow on how to install and use AntergosPrime.
 
 Even if this branch is made for Antergos, the installation-instructions are mostly system-independent and should therefore work with any Arch-distribution.
 
@@ -71,17 +71,24 @@ sudo systemctl enable sddm
 
 Now you can switch GPU-configs with "prime-select". It's a good idea to try both configs, so that everything is installed.
 
-**For Intel**
+**Intel**
 ```
 sudo prime-select intel
 ```
 
-**For Nvidia**
+**Nvidia**
 ```
 sudo prime-select nvidia
 ```
 
 **Note:** If there's an update e.g. for Nvidia or nvidia-utils, you have to switch to both GPUs once with **prime-select** so that all the Xorg-files are in place and overwrite the new generated files by the update.
+
+## Tearing while using the Nvidia-GPU
+Even if Emanuellopes tried to fix the tearing while using the Nvidia-GPU, it still does not work and gives your terrible tearing.
+
+The solution I found was to use [PRIME Synchronization](https://devtalk.nvidia.com/default/topic/957814/linux/prime-and-prime-synchronization/).
+
+The setup with AntergosPrime is rather simple, since it does 
 
 ## Troubleshooting
 
