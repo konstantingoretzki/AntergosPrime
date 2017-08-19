@@ -108,7 +108,7 @@ GRUB_CMDLINE_LINUX_DEFAULT="quiet nvidia-drm.modeset=1"
 
 **Re-generate the grub.cfg file**
 ```
-grub-mkconfig -o /boot/grub/grub.cfg
+sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 You should now be able to switch on and off PRIME Synchronization.
