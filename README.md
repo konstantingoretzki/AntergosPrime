@@ -67,5 +67,16 @@ sudo systemctl disable lightdm
 sudo systemctl enable sddm
 ```
 
+Now you can switch GPU-configs with "prime-select". It's a good idea to try both configs, so that everything is installed.
+
+**For Intel**
+```
+sudo prime-select intel
+```
+
+**For Nvidia**
+```
+sudo prime-select nvidia
+```
 
 
