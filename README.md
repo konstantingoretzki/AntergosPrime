@@ -92,16 +92,18 @@ The solution I found was to use [PRIME Synchronization](https://devtalk.nvidia.c
 
 The setup with AntergosPrime is rather simple, since the script do provide almost everything needed (all needed modules are loaded).
 
-The only thing that has to be done manually is to add the kernel-parameter ```nvidia-drm.modeset=1``` to GRUB (if you don't use GRUB, look the needed setup up in the [ArchWiki](https://wiki.archlinux.org/index.php/Kernel_parameters).
+The only thing that has to be done manually is to add the kernel-parameter ```nvidia-drm.modeset=1``` to GRUB (if you don't use GRUB, look your needed setup up in the [ArchWiki](https://wiki.archlinux.org/index.php/Kernel_parameters).
 
 ### GRUB
 
-**Edit /etc/default/grub and append the kernel options to the GRUB_CMDLINE_LINUX_DEFAULT line**
+**Edit /etc/default/grub**
 ```
 sudo nano /ect/default/grub
 ```
+
+**Append the kernel options to the GRUB_CMDLINE_LINUX_DEFAULT line**
 ```
-GRUB_CMDLINE_LINUX_DEFAULT="quiet quiet nvidia-drm.modeset=1"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet nvidia-drm.modeset=1"
 ```
 
 **Re-generate the grub.cfg file**
