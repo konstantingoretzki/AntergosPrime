@@ -16,11 +16,12 @@ function SetAlternative() {
 		echo "LibGL already is $currentalternative, nothing to do"
 	else
 		if [ "$desired" = "nvidia" ]; then
-			pacman --noconfirm -Rdd mesa-libgl lib32-mesa-libgl
-			pacman --noconfirm -S nvidia-libgl lib32-nvidia-libgl
+			#pacman --noconfirm -Rdd mesa lib32-mesa xf86-video-intel               
+			pacman --noconfirm -S nvidia-utils lib32-nvidia-utils xf86-video-intel     
 		elif [ "$desired" = "intel" ]; then
-			pacman --noconfirm -Rdd nvidia-libgl lib32-nvidia-libgl
-			pacman --noconfirm -S mesa-libgl lib32-mesa-libgl
+			pacman --noconfirm -Rdd nvidia-utils lib32-nvidia-utils      
+			pacman --noconfirm -S mesa lib32-mesa             
+			pacman --noconfirm -S xf86-video-intel                
 		fi
 	fi
 }

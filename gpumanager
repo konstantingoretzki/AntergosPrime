@@ -18,12 +18,13 @@ function SetAlternative() {
 	else
 		if [ "$desired" = "nvidia" ]; then
 			echo "$(date +%Y-%m-%d:%H:%M:%S) - Setting up desired Alternative"
-			pacman --noconfirm -Rdd mesa-libgl lib32-mesa-libgl
-			pacman --noconfirm -S nvidia-libgl lib32-nvidia-libgl
+			#pacman --noconfirm -Rdd mesa lib32-mesa
+			pacman --noconfirm -S nvidia-utils lib32-nvidia-utils xf86-video-intel
 		elif [ "$desired" = "intel" ]; then
 			echo "$(date +%Y-%m-%d:%H:%M:%S) - Setting up desired Alternative"
-			pacman --noconfirm -Rdd nvidia-libgl lib32-nvidia-libgl
-			pacman --noconfirm -S mesa-libgl lib32-mesa-libgl
+			pacman --noconfirm -Rdd nvidia-utils lib32-nvidia-utils
+			pacman --noconfirm -S mesa lib32-mesa
+			pacman --noconfirm -S xf86-video-intel
 		fi
 	fi
 }
@@ -71,13 +72,15 @@ function SetupConfigs() {
 	chmod +x /usr/share/sddm/scripts/Xsetup
 }
 
+
 #Load the nvidia module
 function LoadModule() {
 	echo "$(date +%Y-%m-%d:%H:%M:%S) - Loading NVIDIA module"
 	modprobe nvidia
 	modprobe nvidia_uvm
-	modprobe nvidia_drm
-	modprobe nvidia_modeset
+#	modprobe nvidia_drm
+#	modprobe nvidia_modeset
+	modprobe nvidia-drm modeset=1
 }
 
 #Unload the nvidia module
@@ -88,6 +91,7 @@ function UnloadModule() {
 		modprobe -r nvidia_uvm
 		modprobe -r nvidia_drm
 		modprobe -r nvidia_modeset
+#		modprobe -r nvidia-drm modeset=1
 		modprobe -r nvidia
 	fi
 }
