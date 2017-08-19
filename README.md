@@ -39,3 +39,7 @@ There are solutions like nvidia-xrun, the problem with nvidia-xrun is that you h
 sudo pacman -S bbswitch sddm
 ```
 
+**Download all needed files manually or with the command "git clone"**
+```
+git clone https://github.com/konstantingoretzki/AntergosPrime
+```
