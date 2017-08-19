@@ -13,5 +13,7 @@ The prime-indicator does also not work.
 ## Installation
 
 Install bbswitch and SDDM (if not installed)
-```sudo pacman -S bbswitch```
+```
+sudo pacman -S bbswitch
+```
 
