@@ -27,7 +27,7 @@ With Bumblebee you can only use the tool "intel-virtual-output", if your HDMI-ou
 
 There are solutions like nvidia-xrun, the problem with nvidia-xrun is that you have to switch to an unused TTY and also Steam does not work. You can found more information about nvidia-xrun [here](https://github.com/Witko/nvidia-xrun).
 
-## DO NOT INSTALL - The AntergosPrime repo is not ready for usage 
+## DO NOT INSTALL - The AntergosPrime repo is not ready for usage
 
 **Install bbswitch and SDDM (if not installed)**
 ```
@@ -67,6 +67,8 @@ sudo systemctl disable lightdm
 sudo systemctl enable sddm
 ```
 
+## Usage 
+
 Now you can switch GPU-configs with "prime-select". It's a good idea to try both configs, so that everything is installed.
 
 **For Intel**
@@ -79,4 +81,11 @@ sudo prime-select intel
 sudo prime-select nvidia
 ```
 
+**Note:** If there's an update e.g. for Nvidia or nvidia-utils, it's recommended to switch to both GPUs once with **prime-select** so that all the Xorg-files are in place and do not get overwritten.
+
+## Troubleshooting
+
+### After an update it does not work anymore
+**Solution**
+Try to switch to both GPUs with **prime-select** once, so that all the Xorg-files are in place and do not get overwritten.
 
