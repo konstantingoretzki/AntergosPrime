@@ -48,3 +48,10 @@ git clone https://github.com/konstantingoretzki/AntergosPrime
 ```
 ./install.sh
 ```
+If you can not run the install.sh then check out, that you have execute-permissions.
+```
+chmod +x install.sh
+```
+
+**Note:**
+The process is the same if you want to remove AntergosPrime. This time just run remove.sh.
