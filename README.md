@@ -81,11 +81,11 @@ sudo prime-select intel
 sudo prime-select nvidia
 ```
 
-**Note:** If there's an update e.g. for Nvidia or nvidia-utils, it's recommended to switch to both GPUs once with **prime-select** so that all the Xorg-files are in place and do not get overwritten.
+**Note:** If there's an update e.g. for Nvidia or nvidia-utils, you have to switch to both GPUs once with **prime-select** so that all the Xorg-files are in place and overwrite the new generated files by the update.
 
 ## Troubleshooting
 
 ### After an update it does not work anymore
 **Solution:**
-Try to switch to both GPUs with **prime-select** once, so that all the Xorg-files are in place and do not get overwritten.
+Try to switch to both GPUs with **prime-select** once, so that all the Xorg-files are in place and overwrite the new generated files by the update.
 
