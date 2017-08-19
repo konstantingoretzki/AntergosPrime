@@ -41,6 +41,9 @@ git clone https://github.com/konstantingoretzki/AntergosPrime
 
 **Switch to the folder "AntergosPrime" and run the install.sh**
 ```
+cd /AntergosPrime
+```
+```
 ./install.sh
 ```
 If you can not run the install.sh then check out, that you have execute-permissions.
