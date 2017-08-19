@@ -41,7 +41,7 @@ git clone https://github.com/konstantingoretzki/AntergosPrime
 
 **Switch to the folder "AntergosPrime" and run the install.sh**
 ```
-cd /AntergosPrime
+cd AntergosPrime
 ```
 ```
 ./install.sh
