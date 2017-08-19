@@ -111,6 +111,15 @@ GRUB_CMDLINE_LINUX_DEFAULT="quiet nvidia-drm.modeset=1"
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
+You should now be able to switch on and off PRIME Synchronization.
+You can do this with ```xrandr --output [your-screen-name] --set "PRIME Synchronization" 1```
+
+Disabeling is the same, just use "0" instead of "1".
+If you're using KDE, you can easily get your screen-name by KDE's display setup menu.
+
+Inside folder "tearing" of this repo are the two files **kill_vsync.sh** and **start_vsync.sh**, with these files you can easily turn PRIME Synchronization on and off - just execute them.
+
+
 ## Troubleshooting
 
 ### After an update it does not work anymore!
