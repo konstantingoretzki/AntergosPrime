@@ -85,7 +85,7 @@ sudo prime-select nvidia
 
 **Note:** You can check if you are using the right GPU with glxgears.
 To do so type ```glxinfo | grep Intel``` or ```glxinfo | grep NVIDIA```. If you get
-an output and it works.
+an output, it works.
 
 
 **Note:** If there's an update e.g. for Nvidia or nvidia-utils, you have to switch to both GPUs once with **prime-select** so that all the Xorg-files are in place and overwrite the new generated files by the update.
