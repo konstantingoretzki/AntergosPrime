@@ -85,7 +85,11 @@ sudo prime-select nvidia
 
 ## Troubleshooting
 
-### After an update it does not work anymore
+### After an update it does not work anymore!
 **Solution:**
 Try to switch to both GPUs with **prime-select** once, so that all the Xorg-files are in place and overwrite the new generated files by the update.
 
+### All fonts are very small!
+**Solution:**
+Add ```xrandr --dpi [wished DPI]``` to your files **nvidia-optimus.sh** and **Xsetup**.
+If you want to use my dpi-settings, then just uncomment the line ```xrandr --dpi 96``` in both files.
