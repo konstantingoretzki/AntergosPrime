@@ -131,6 +131,6 @@ Try to switch to both GPUs with **prime-select** once, so that all the Xorg-file
 Add ```xrandr --dpi [wished DPI]``` to your files **nvidia-optimus.sh** and **Xsetup**.
 If you want to use my dpi-settings, then just uncomment the line ```xrandr --dpi 96``` in both files.
 
-## I get the error ```bash: ./install.sh: no permission```!
+### I get the error ```bash: ./install.sh: Permission denied```!
 **Solution:**
 Just make the file executable with ```chmod +x install.sh```.
