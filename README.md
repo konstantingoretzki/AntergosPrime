@@ -29,7 +29,7 @@ With Bumblebee you can only use the tool "intel-virtual-output", if your HDMI-ou
 
 There are solutions like nvidia-xrun, the problem with nvidia-xrun is that you have to switch to an unused TTY and also Steam does not work. You can found more information about nvidia-xrun [here](https://github.com/Witko/nvidia-xrun).
 
-## DO NOT INSTALL - The AntergosPrime repo is not ready for usage
+## Installation
 
 **Install bbswitch and SDDM (if not installed)**
 ```
