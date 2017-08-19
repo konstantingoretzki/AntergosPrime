@@ -2,7 +2,7 @@
 
 ### This collection of scripts wants to provide GPU-switching for Hybrid-GPUs like in \*buntu-distributions for Antergos.
 
-This branch is a fork of emanuellopes's [archLinuxPrime](https://github.com/emanuellopes/archLinuxPrime) which got optimized for the Antergos distribution. Emanuellopes forked for his repo the prime application that comes on Linux Mint. 
+This branch is a fork of emanuellopes's [archLinuxPrime](https://github.com/emanuellopes/archLinuxPrime) which got optimized for the Antergos distribution. Emanuellopes forked for his repo the prime application that comes on Linux Mint.
 
 The main work of this script goes to Emanuellopes and the Linux-Mint-team, I just optimized on some paths, updated package names, added how to fix the tearing for the Nvidia-GPU and put everything well described together, so that even people with less bash skills can (hopefully) easily follow on how to install and use AntergosPrime.
 
@@ -11,11 +11,11 @@ Even if this branch is made for Antergos, the installation-instructions are most
 ### Status
 Currently this script only works with the display manager SDDM and **NOT** with Antergos's default display manager LightDM.
 However switching is easy, so it should be not a big deal to switch your display manager.
-The prime-indicator does also not work - currently function goes before accessibility ;) 
+The prime-indicator does also not work - currently function goes before accessibility ;)
 
 ### Why not solution XYZ?
 
-You might ask why to use this config and not something like Bumblebee. It's simple: if your laptop has the HDMI-output hardwired to your Nvidia GPU and you can not disable any GPU inside your BIOS/UEFI, then you won't be able to switch GPUs. 
+You might ask why to use this config and not something like Bumblebee. It's simple: if your laptop has the HDMI-output hardwired to your Nvidia GPU and you can not disable any GPU inside your BIOS/UEFI, then you won't be able to switch GPUs.
 
 If you can not switch GPUs you have to let your Nvidia-GPU activated the whole time, so that you can use the HDMI-output and do graphical stuff like Gaming. In terms of battery run-time you will see that you can not really use your laptop to go this way since the battery will drain very fast.
 
@@ -69,7 +69,7 @@ sudo systemctl disable lightdm
 sudo systemctl enable sddm
 ```
 
-## Usage 
+## Usage
 
 Now you can switch GPU-configs with "prime-select". It's a good idea to try both configs, so that everything is installed.
 
@@ -82,6 +82,11 @@ sudo prime-select intel
 ```
 sudo prime-select nvidia
 ```
+
+**Note:** You can check if you are using the right GPU with glxgears.
+To do so type ```glxinfo | grep Intel``` or ```glxinfo | grep NVIDIA```. If you get
+an output and it works.
+
 
 **Note:** If there's an update e.g. for Nvidia or nvidia-utils, you have to switch to both GPUs once with **prime-select** so that all the Xorg-files are in place and overwrite the new generated files by the update.
 
