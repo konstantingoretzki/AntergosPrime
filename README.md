@@ -2,7 +2,9 @@
 
 ### This collection of scripts wants to provide GPU-switching for Hybrid-GPUs like in \*buntu-distributions for Antergos.
 
-This branch is a fork of emanuellopes's [archLinuxPrime](https://github.com/emanuellopes/archLinuxPrime) which got optimized for the Antergos distribution. Emanuellopes forked for his repo the prime application that comes on Linux Mint. The main work of this script goes to Emanuellopes and the Linux-Mint-team, I just optimized on some paths, updated package names, added how to fix the tearing and put everything well described together, so that even people with less bash skills can (hopefully) easily follow on how to install and use AntergosPrime.
+This branch is a fork of emanuellopes's [archLinuxPrime](https://github.com/emanuellopes/archLinuxPrime) which got optimized for the Antergos distribution. Emanuellopes forked for his repo the prime application that comes on Linux Mint. 
+
+The main work of this script goes to Emanuellopes and the Linux-Mint-team, I just optimized on some paths, updated package names, added how to fix the tearing and put everything well described together, so that even people with less bash skills can (hopefully) easily follow on how to install and use AntergosPrime.
 
 Even if this branch is made for Antergos, the installation-instructions are mostly system-independent and should therefore work with any Arch-distribution.
 
@@ -88,7 +90,24 @@ Even if Emanuellopes tried to fix the tearing while using the Nvidia-GPU, it sti
 
 The solution I found was to use [PRIME Synchronization](https://devtalk.nvidia.com/default/topic/957814/linux/prime-and-prime-synchronization/).
 
-The setup with AntergosPrime is rather simple, since it does 
+The setup with AntergosPrime is rather simple, since the script do provide almost everything needed (all needed modules are loaded).
+
+The only thing that has to be done manually is to add the kernel-parameter ```nvidia-drm.modeset=1``` to GRUB (if you don't use GRUB, look the needed setup up in the [ArchWiki](https://wiki.archlinux.org/index.php/Kernel_parameters).
+
+### GRUB
+
+**Edit /etc/default/grub and append the kernel options to the GRUB_CMDLINE_LINUX_DEFAULT line**
+```
+sudo nano /ect/default/grub
+```
+```
+GRUB_CMDLINE_LINUX_DEFAULT="quiet quiet nvidia-drm.modeset=1"
+```
+
+**Re-generate the grub.cfg file**
+```
+grub-mkconfig -o /boot/grub/grub.cfg
+```
 
 ## Troubleshooting
 
