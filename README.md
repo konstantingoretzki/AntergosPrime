@@ -54,4 +54,4 @@ chmod +x install.sh
 ```
 
 **Note:**
-The process is the same if you want to remove AntergosPrime. This time just run remove.sh.
+The process is the same if you want to remove AntergosPrime. This time just run **remove.sh**.
