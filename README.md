@@ -85,7 +85,7 @@ sudo prime-select nvidia
 
 **Note:** If there's an update e.g. for Nvidia or nvidia-utils, you have to switch to both GPUs once with **prime-select** so that all the Xorg-files are in place and overwrite the new generated files by the update.
 
-## Tearing while using the Nvidia-GPU
+## Fix tearing while using the Nvidia-GPU
 Even if Emanuellopes fixed the tearing while using the Intel-GPU, while using the Nvidia-GPU you still experience tearing.
 
 The solution I found was to use [PRIME Synchronization](https://devtalk.nvidia.com/default/topic/957814/linux/prime-and-prime-synchronization/).
