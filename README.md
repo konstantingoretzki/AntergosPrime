@@ -88,7 +88,7 @@ To do so type ```glxinfo | grep Intel``` or ```glxinfo | grep NVIDIA```. If you 
 an output, it works.
 
 
-**Note:** If there's an update e.g. for Nvidia or nvidia-utils, you have to switch to both GPUs once with **prime-select** so that all the Xorg-files are in place and overwrite the new generated files by the update.
+**Warning:** If there's an update e.g. for Nvidia or nvidia-utils, you have to switch to both GPUs once with **prime-select** so that all the Xorg-files are in place and overwrite the new generated files by the update.
 
 ## Fix tearing while using the Nvidia-GPU
 Even if Emanuellopes fixed the tearing while using the Intel-GPU, while using the Nvidia-GPU you still experience tearing.
