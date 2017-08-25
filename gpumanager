@@ -78,9 +78,8 @@ function LoadModule() {
 	echo "$(date +%Y-%m-%d:%H:%M:%S) - Loading NVIDIA module"
 	modprobe nvidia
 	modprobe nvidia_uvm
-#	modprobe nvidia_drm
-#	modprobe nvidia_modeset
-	modprobe nvidia-drm modeset=1
+  modprobe nvidia_drm
+  modprobe nvidia_modeset
 }
 
 #Unload the nvidia module
@@ -91,7 +90,6 @@ function UnloadModule() {
 		modprobe -r nvidia_uvm
 		modprobe -r nvidia_drm
 		modprobe -r nvidia_modeset
-#		modprobe -r nvidia-drm modeset=1
 		modprobe -r nvidia
 	fi
 }
