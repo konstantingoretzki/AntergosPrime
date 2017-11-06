@@ -134,7 +134,7 @@ Try to switch to both GPUs with **prime-select** once, so that all the Xorg-file
 ### All fonts are very small!
 **Solution:**
 Add ```xrandr --dpi [wished DPI]``` to your files **nvidia-optimus.sh** and **Xsetup**.
-If you want to use my dpi-settings, then just uncomment the line ```xrandr --dpi 96``` in both files.
+If you want to use my dpi-settings, then just uncomment the line ```xrandr --dpi 96``` in both files. Afer that you have to switch to both GPUs with **prime-select** once, so that alle the new files (with the changes) are in place.
 
 ### I get the error ```bash: ./install.sh: Permission denied```!
 **Solution:**
