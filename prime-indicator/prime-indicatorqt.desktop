@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Exec=/usr/local/bin/prime-indicatorqt
-Hidden=false
-NoDisplay=false
-X-GNOME-Autostart-enabled=true
-Name=PRIME Indicator
-Comment=Simple indicator applet to switch between graphics cards on NVIDIA/Intel hybrid systems
-Name[pt_PT]=prime-indicatorqt.desktop
