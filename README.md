@@ -30,8 +30,10 @@ With Bumblebee you can only use the tool "intel-virtual-output", if your HDMI-ou
 There are solutions like nvidia-xrun, the problem with nvidia-xrun is that you have to switch to an unused TTY and also Steam does not work. You can found more information about nvidia-xrun [here](https://github.com/Witko/nvidia-xrun).
 
 ## Installation
+### Antergos repo
 
 **Install antergos-prime using the repo of Antergos**
+
 The easiest way to install AntergosPrime is by using the package of the Antergos repo.
 You can easily install it with one command with pacman, however you may want to continue reading the instructions for installing it manually since there are some "heavy" system changes like changing your Display Manager, which you should be aware of.
 ```
@@ -40,7 +42,7 @@ sudo pacman -S antergos-prime
 
 ---
 
-**Alternative/ install manually**   
+### Alternative/ install manually   
 
 **Install bbswitch and SDDM (if not installed)**
 ```
