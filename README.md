@@ -11,7 +11,7 @@ Even if this branch is made for Antergos, the installation-instructions are most
 ### Status
 Currently this script only works with the display manager SDDM and **NOT** with Antergos's default display manager LightDM.
 However switching is easy, so it should be not a big deal to switch your display manager.
-The prime-indicator does also not work - currently function goes before accessibility ;)
+The prime-indicator does also not work so it has been removed. Even after fixing the installation script it did not work well enough wit KDE so it got removed. If you still want to use the prime-indicator you can find more information [here](https://github.com/andrebrait/prime-indicator). 
 
 ### Why not solution XYZ?
 
@@ -30,6 +30,17 @@ With Bumblebee you can only use the tool "intel-virtual-output", if your HDMI-ou
 There are solutions like nvidia-xrun, the problem with nvidia-xrun is that you have to switch to an unused TTY and also Steam does not work. You can found more information about nvidia-xrun [here](https://github.com/Witko/nvidia-xrun).
 
 ## Installation
+
+**Install antergos-prime using the repo of Antergos**
+The easiest way to install AntergosPrime is by using the package of the Antergos repo.
+You can easily install it with one command with pacman, however you may want to continue reading the instructions for installing it manually since there are some "heavy" system changes like changing your Display Manager, which you should be aware of.
+```
+sudo pacman -S antergos-prime
+```
+
+---
+
+**Alternative/ install manually**   
 
 **Install bbswitch and SDDM (if not installed)**
 ```
@@ -134,7 +145,7 @@ Try to switch to both GPUs with **prime-select** once, so that all the Xorg-file
 ### All fonts are very small!
 **Solution:**
 Add ```xrandr --dpi [wished DPI]``` to your files **nvidia-optimus.sh** and **Xsetup**.
-If you want to use my dpi-settings, then just uncomment the line ```xrandr --dpi 96``` in both files. Afer that you have to switch to both GPUs with **prime-select** once, so that alle the new files (with the changes) are in place.
+If you want to use my dpi-settings, then just uncomment the line ```xrandr --dpi 96``` in both files. After that you have to switch to both GPUs with **prime-select** once, so that all the new files (with the changes) are in place.
 
 ### I get the error ```bash: ./install.sh: Permission denied```!
 **Solution:**
