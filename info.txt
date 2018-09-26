@@ -1,2 +1,0 @@
-/run/media/emanuelx/022631e9-f0b9-4bbc-a3e2-865681f952d9/usr/share/pixmaps/prime-tray-intel.png
-/run/media/emanuelx/022631e9-f0b9-4bbc-a3e2-865681f952d9/usr/share/pixmaps/prime-tray-nvidia.png
