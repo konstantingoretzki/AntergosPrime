@@ -1,5 +1,11 @@
 # AntergosPrime
 
+### Read before use
+
+AntergosPrime is currently unmaintained.
+There haven't been huge changes since the fork of emanuellopes's [archLinuxPrime](https://github.com/emanuellopes/archLinuxPrime).
+Currently it is recommended to use [optimus-manager](https://github.com/Askannz/optimus-manager) because this tool can do more than just switching configs like power management.
+
 ### This collection of scripts wants to provide GPU-switching for Hybrid-GPUs like in \*buntu-distributions for Antergos.
 
 This branch is a fork of emanuellopes's [archLinuxPrime](https://github.com/emanuellopes/archLinuxPrime) which got optimized for the Antergos distribution. Emanuellopes forked for his repo the prime application that comes on Linux Mint.
